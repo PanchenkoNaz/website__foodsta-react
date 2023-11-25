@@ -2,14 +2,14 @@
   "name": "foodsta",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://buhaiov-a.github.io/foodsta/",
+  "homepage": "https://panchenkonaz.github.io/website__foodsta-react/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /foodsta/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buhaiov-a/foodsta.git"
+    "url": "git+https://panchenkonaz.github.io/website__foodsta-react/"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
