@@ -1,0 +1,54 @@
+.button {
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px 22px;
+  line-height: 1;
+}
+
+.button__green-small {
+  padding: 6px 18px;
+  background-color: $green;
+  border: none;
+}
+
+.button__green-big {
+  background-color: $green;
+  border: none;
+}
+
+.button__green-small:hover,
+.button__green-small:focus,
+.button__green-big:hover,
+.button__green-big:focus {
+  background-color: $light-green;
+}
+
+.button__white {
+  border: 2px solid $dark-green;
+  background: $white;
+}
+.button__white:hover,
+.button__white:focus {
+  border-color: $black-green;
+}
+#btn-header {
+  @include mq(mobile-only) {
+    display: none;
+  }
+}
+
+.button__yellow {
+  border: 0.854px solid $dark-green;
+  background: $white;
+  height: 42px;
+  font-size: 12px;
+}
+
+.button__yellow:hover,
+.button__yellow:focus {
+  background-color: $yellow;
+}

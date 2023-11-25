@@ -1,0 +1,110 @@
+.footer {
+  background: $white;
+  box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
+  background-image: url(../images/footer-background/bg_mob.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mq(retina) {
+    background-image: url(../images/footer-background/bg_mobx2.jpg);
+  }
+
+  background-position: bottom;
+  @include mq(tablet) {
+    background-image: url(../images/footer-background/bg_tab.jpg);
+    @include mq(retina) {
+      background-image: url(../images/footer-background/bg_tabx2.jpg);
+    }
+  }
+  @include mq(desktop) {
+    background-image: url(../images/footer-background/bg_desk.jpg);
+    @include mq(retina) {
+      background-image: url(../images/footer-background/bg_deskx2.jpg);
+    }
+  }
+}
+.footer__block {
+  margin-bottom: 60px;
+  @include mq(desktop) {
+    margin-bottom: 100px;
+    display: flex;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+}
+.footer__menu {
+  display: flex;
+  margin-bottom: 40px;
+  @include mq(tablet) {
+    align-items: center;
+  }
+}
+.footer__logo-link {
+  margin-right: 80px;
+  @include mq(tablet) {
+    margin-right: 115px;
+  }
+  @include mq(desktop) {
+    margin-right: 148px;
+  }
+}
+
+.footer__navigation__list {
+  @include mq(mobile-only) {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.privacy {
+  font-size: 10px;
+  display: flex;
+}
+.privacy__link {
+  color: $green;
+  margin-left: 5px;
+}
+.privacy__link:hover,
+.privacy__link:focus {
+  color: $dark-green;
+}
+
+.policy {
+  font-size: 10px;
+  display: flex;
+  @include mq(mobile-only) {
+    align-items: center;
+    flex-direction: column;
+  }
+  @include mq(tablet) {
+    justify-content: space-between;
+  }
+}
+.policy__list {
+  color: $green;
+  text-decoration: underline;
+  display: flex;
+
+  @include mq(mobile-only) {
+    margin-bottom: 46px;
+    gap: 35px;
+  }
+  @include mq(tablet) {
+    gap: 20px;
+  }
+}
+.policy__item:hover,
+.policy__item:focus {
+  color: $dark-green;
+}
+.btn-footer {
+  @include mq(mobile-only) {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}

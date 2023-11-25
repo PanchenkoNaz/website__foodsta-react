@@ -1,0 +1,179 @@
+.offerings {
+  top: -200px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../images/background/mobile310/Rectangle696.png);
+  @include mq(retina) {
+    background-image: url(../images/background/mobile310/Rectangle696x2.png);
+  }
+  @include mq(mobile) {
+    background-image: url(../images/background/mobile480/Rectangle698.png);
+    @include mq(retina) {
+      background-image: url(../images/background/mobile480/Rectangle698x2.png);
+    }
+  }
+  @include mq(tablet) {
+    background-image: url(../images/background/tablet/Rectangle718.png);
+    @include mq(retina) {
+      background-image: url(../images/background/tablet/Rectangle718x2.png);
+    }
+  }
+  @include mq(desktop) {
+    background-image: url(../images/background/desktop/Rectangle694.png);
+    @include mq(retina) {
+      background-image: url(../images/background/desktop/Rectangle694x2.png);
+    }
+  }
+}
+.offerings-container {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  flex-direction: column;
+  @include mq(tablet) {
+    padding-top: 187px;
+    padding-bottom: 110px;
+  }
+  @include mq(desktop) {
+    flex-direction: row;
+    padding-top: 231px;
+    padding-bottom: 43px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 84px;
+  margin-bottom: 28px;
+  @include mq(tablet) {
+    flex-direction: row;
+    gap: 116px;
+    margin-bottom: 40px;
+  }
+  @include mq(desktop) {
+    gap: 67px;
+    margin-bottom: 31px;
+  }
+}
+.benefits__title {
+  margin-bottom: 16px;
+}
+
+.about {
+  @include mq(desktop) {
+    width: 50%;
+  }
+}
+.apple-container {
+  margin-bottom: 60px;
+  @include mq(tablet-only) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.apple {
+  width: 280px;
+  height: 280px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  @include mq(mobile-only) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include mq(tablet) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 357px;
+    height: 357px;
+  }
+  @include mq(desktop) {
+    width: 550px;
+    height: 550px;
+    margin-bottom: auto;
+  }
+}
+.apples {
+  display: flex;
+  align-items: flex-end;
+}
+
+.apple__circle {
+  position: relative;
+  margin: auto;
+  width: 255px;
+  height: 255px;
+  border-radius: 50%;
+  background-color: $white;
+  @include mq(tablet) {
+    width: 325px;
+    height: 325px;
+  }
+  @include mq(desktop) {
+    width: 502px;
+    height: 502px;
+  }
+}
+.apple__img {
+  position: absolute;
+  top: -40px;
+  left: 28px;
+  @include mq(tablet) {
+    top: -50px;
+    left: 33px;
+  }
+  @include mq(desktop) {
+    top: -80px;
+    left: 52px;
+  }
+}
+.apple-middle__img,
+.apple-small__img {
+  display: none;
+  @include mq(tablet) {
+    display: block;
+  }
+  @include mq(desktop) {
+    display: none;
+  }
+}
+.apple-middle__img {
+  margin-right: 44px;
+}
+.about__title,
+.about__description {
+  @include mq(tablet) {
+    width: 500px;
+  }
+}
+.benefits__title {
+  display: flex;
+  flex-direction: column;
+}
+.benefits__title-first::before {
+  content: '';
+  background-image: url('../images/svg/rocket_launch.svg');
+  background-color: $white;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 8px;
+  background-position: 50% 50%;
+}
+.benefits__title-second::before {
+  content: '';
+  background-image: url('../images/svg/touch_app.svg');
+  background-color: $white;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 8px;
+  background-position: 50% 50%;
+}

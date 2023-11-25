@@ -1,0 +1,36 @@
+.form__input {
+  font-size: 12px;
+  border-radius: 30px;
+  border: 0.854px solid $yellow;
+  background: $white;
+  padding: 12px;
+}
+.form__input::placeholder {
+  color: #505050;
+  font-size: 12px;
+}
+.form__lable {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  @include mq(mobile-only) {
+    margin-bottom: 32px;
+  }
+  @include mq(tablet) {
+    margin-right: 13px;
+  }
+}
+.footer__form__input {
+  margin-top: 12px;
+  @include mq(tablet) {
+    width: 280px;
+  }
+}
+.footer__form {
+  margin-bottom: 20px;
+  align-items: flex-end;
+  @include mq(tablet) {
+    margin-bottom: 12px;
+    display: flex;
+  }
+}

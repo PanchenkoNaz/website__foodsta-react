@@ -1,0 +1,44 @@
+.subscribe__container {
+  position: relative;
+  @include mq(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.contacts__input {
+  @include mq(mobile-only) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @include mq(tablet) {
+    width: 395px;
+    margin-right: 22px;
+  }
+}
+.subscribe-img {
+  position: absolute;
+
+  @include mq(mobile-only) {
+    width: 281px;
+    top: -52px;
+    left: 25%;
+  }
+
+  @include mq(tablet) {
+    width: 281px;
+    top: -20px;
+    right: 0;
+  }
+  @include mq(desktop) {
+    width: 608px;
+    position: static;
+  }
+}
+.subscribe__btn {
+  @include mq(mobile-only) {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
